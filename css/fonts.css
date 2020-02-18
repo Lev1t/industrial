@@ -1,0 +1,15 @@
+@font-face {
+    font-family: grotesk;
+    src: url("../fonts/hkgrotesk-regular-webfont.woff"),
+    url("../fonts/hkgrotesk-regular-webfont.woff2 ");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: spartan;
+    src: url("../fonts/leaguespartan-bold-webfont.woff"),
+    url("../fonts/leaguespartan-bold-webfont.woff2");
+    font-weight: 700;
+    text-transform: uppercase;
+}

@@ -1,0 +1,96 @@
+footer {
+    width: 70%;
+    padding: 13.36% 0 5.6%;
+    margin: 0 auto;
+    text-align: center;
+
+    .subscribe-box {
+        .subscribe-box__title {
+            color: #92a1a9;
+            font-size: 2.25em;
+            line-height: 1.11;
+        }
+        .subscribe-box__text {
+            color: #7f919b;
+            font-size: 1.125em;
+            line-height: 1.22;
+            margin: 0.9em 0 2.78em;
+        }
+
+        .sub-form {
+            input {
+            display: block;
+            width: 15em;
+            height: 2.5em;
+            margin: 0 auto;
+            box-sizing: border-box;
+            border: 3px solid #63757e;
+            background-color: transparent;
+            color: #92a1a9;
+            font-size: 1.5em;
+            font-weight: 300;
+            text-align: center;
+            }
+            .sub-form__input-email {
+                margin-bottom: 20px;
+            }
+            .sub-form__submit-btn {
+                border-color: #82c9d8;
+            }
+        }
+    }
+
+    .footer-bottom {
+        .menu {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style: none;
+            margin: 6.25em 0 1.5em;
+
+            .menu__item {
+                color: #92a1a9;
+                font-size: 1.5em;
+            }
+            .menu__item::before {
+                content: "•";
+                padding: 0 0.5em;
+            }
+            .menu__item:first-child::before {
+                content: "";
+                padding: 0;
+            }
+        }
+
+        .copyright {
+            color: #7f919b;
+            font-size: 1.125em;
+
+        }
+    }
+}
+
+@media (max-width: 770px) {
+    footer .subscribe-box .sub-form input{
+        width: 13em;
+    }
+}
+
+@media (max-width: 520px) {
+    footer {
+        padding-top: 6%;
+        .subscribe-box .sub-form input{
+            width: 11em;
+        }
+
+        .footer-bottom .menu {
+            margin-top: 5em; 
+        }
+    }
+}
+
+@media (max-width: 350px) {
+    footer .footer-bottom .menu {
+        margin-top: 3.5em;
+    }
+}

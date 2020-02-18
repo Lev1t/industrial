@@ -1,0 +1,209 @@
+header {
+    padding-top: 3.75em;
+}
+
+.header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: block;
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #63757e;
+    padding-bottom: 0.5em;
+}
+
+.search-form__input {
+    width: 145px;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+}
+
+.search-form__input::placeholder {
+    color: #92a1a9;
+    transition-duration: 0.2s;
+    transition-property: color;
+}
+
+.search-form:hover .search-form__input::placeholder,
+.search-form:focus-within .search-form__input::placeholder {
+    color: #fff;
+}
+
+.search-form__submit {
+    width: 22px;
+    height: 22px;
+    margin-right: 0.5em;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background: url("../../img/header/search.svg") no-repeat;
+}
+
+.header__content {
+    position: relative;
+    max-width: 1160px;
+    background: url("../../img/header/Gina_product.jpg") center top no-repeat;
+    background-size: cover;
+    margin-top: 3.125em;
+    padding-top: 6.25em;
+    padding-left: 3.75em;
+    padding-bottom: 7.5em;
+}
+
+.kickstarter-box {
+    display: flex;
+    position: absolute;
+    width: 112px;
+    height: 115px;
+    top: 2.8em;
+    right: 2.8em;
+    background: url("../../img/header/badge.svg") no-repeat;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    font-family: spartan;
+    font-size: 5em;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+.product-description {
+    width: 380px;
+    font-size: 2em;
+    margin-top: 1.25em;
+    margin-bottom: 4.22em;
+}
+
+.button-shop-now {
+    display: flex;
+    font-size: 1.5em;
+    width: 6.67em;
+    height: 2.5em;
+    border: 3px solid #eec9a2;
+    box-sizing: border-box;
+    justify-content: center;
+    padding-top: 0.33em;
+    transition-duration: 0.2s;
+}
+
+.button-shop-now:hover,
+.button-shop-now:active,
+.button-shop-now:focus {
+    border-color: teal;
+    color: wheat;
+}
+
+@media (max-width: 770px) {
+    body {
+        font-size: 0.875rem;
+    }
+}
+
+@media (max-width: 520px) {
+    body {
+        font-size: 0.75rem;
+    }
+
+    .header__top {
+        flex-direction: column;
+        width: 294px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin-bottom: 1.67em;
+    }
+
+    .search-form {
+        align-self: flex-end;
+    }
+
+    .search-form__input {
+        width: 200px;
+    }
+    .kickstarter-box {
+        top: 2em;
+        right: 0;
+        transform: scale(0.8);
+    }
+
+    .product {
+        font-size: 4.5em;
+    }
+
+    .product-description {
+        width: 230px;
+        font-size: 1.83em;
+    }
+}
+
+@media (max-width: 350px) {
+    body {
+        font-size: 0.6875rem;
+    }
+
+    header {
+        padding-top: 15px;
+    }
+
+    .header__top {
+        flex-direction: column;
+        width: 250px;
+        margin: 0 auto;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+    }
+
+    .logo__img {
+        width: 250px;
+        height: auto;
+    }
+
+    .search-form {
+        align-self: flex-end;
+
+    }
+    .search-form {
+        border-bottom: 2px solid #63757e;
+    }
+    
+    .search-form__input {
+        font-size: 20px;
+        width: 170px;
+    }
+    
+    .search-form__submit {
+        width: 20px;
+        height: 20px;
+    }
+
+    .header__content {
+        padding-top: 30px;
+        padding-left: 15px;
+        padding-bottom: 6.5em;
+    }
+    
+    .kickstarter-box {
+        top: 0px;
+        right: 0px;
+        transform: scale(0.7);
+    }
+
+    .button-shop-now {
+        border-color: #b19560;
+    }
+}

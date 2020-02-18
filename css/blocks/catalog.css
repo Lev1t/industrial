@@ -1,0 +1,165 @@
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  -webkit-column-gap: 40px;
+          column-gap: 40px;
+  row-gap: 40px; }
+  .catalog .button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 120px;
+    height: 48px;
+    font-family: spartan;
+    font-size: 1.125em;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 3px solid #eec9a2;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .catalog .item--big {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    grid-column: span 3;
+    background-size: contain;
+    padding: 10.71% 1.875em 59.82%; }
+    .catalog .item--big .item__title {
+      font-family: spartan;
+      font-size: 3em;
+      font-weight: 700;
+      line-height: 1.125;
+      text-transform: uppercase; }
+    .catalog .item--big .item__description {
+      width: 82.142%;
+      font-size: 1.5em;
+      line-height: 1.25;
+      font-weight: 300;
+      margin-top: 0.75em; }
+  .catalog .item--big:nth-of-type(1) {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    background: url("../../img/main/beoplay.jpg") no-repeat left bottom #5eb8a5;
+    background-size: contain; }
+    .catalog .item--big:nth-of-type(1) .item__description {
+      text-align: end; }
+    .catalog .item--big:nth-of-type(1) .button {
+      position: absolute;
+      top: 52%;
+      right: 5.35%; }
+  .catalog .item--big:nth-of-type(2) {
+    background: url("../../img/main/leica.jpg") no-repeat right bottom #7778c6;
+    background-size: contain; }
+    .catalog .item--big:nth-of-type(2) .button {
+      position: absolute;
+      top: 52%;
+      left: 5.35%; }
+  .catalog .item--small {
+    grid-column: span 2;
+    padding-top: 18.06%;
+    padding-bottom: 63.61%; }
+    .catalog .item--small .item__description {
+      margin-bottom: 0.625em;
+      text-align: center; }
+    .catalog .item--small .item__title {
+      font-family: spartan;
+      font-size: 2.25em;
+      font-weight: 700;
+      line-height: 1.1;
+      text-align: center;
+      text-transform: uppercase;
+      margin-bottom: 0.889em; }
+    .catalog .item--small .button {
+      margin: 0 auto; }
+  .catalog .item--small:nth-of-type(3) {
+    background: url("../../img/main/molekule.jpg") no-repeat center bottom #e97864;
+    background-size: contain; }
+  .catalog .item--small:nth-of-type(4) {
+    background: url("../../img/main/p9.jpg") no-repeat center top #537683;
+    background-size: contain;
+    padding-bottom: 10.28%;
+    padding-top: 73.06%; }
+  .catalog .item--small:nth-of-type(5) {
+    background: url("../../img/main/dr2.jpg") no-repeat center bottom #82c9d8;
+    background-size: contain; }
+
+@media (max-width: 1000px) {
+  .catalog {
+    font-size: 0.875em; } }
+@media (max-width: 770px) {
+  main {
+    margin-top: 10px; }
+
+  .catalog {
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    -webkit-column-gap: 0;
+            column-gap: 0; }
+    .catalog .item--small, .catalog .item--big {
+      grid-column: 1 / -1;
+      padding: 10.71% 50px 50%; }
+      .catalog .item--small .item__title, .catalog .item--big .item__title {
+        font-size: 3.5em; }
+      .catalog .item--small .item__description, .catalog .item--big .item__description {
+        width: 70%;
+        font-size: 1.71em;
+        margin-top: 0.75em; }
+      .catalog .item--small .button, .catalog .item--big .button {
+        font-size: 18px; }
+    .catalog .item--big:nth-of-type(1) .button {
+      right: 50px; }
+    .catalog .item--big:nth-of-type(2) .button {
+      left: 50px; }
+    .catalog .item--small {
+      padding-top: 5%;
+      padding-bottom: 40%; }
+      .catalog .item--small .item__description {
+        width: 100%;
+        margin-bottom: 1em; }
+      .catalog .item--small .item__title {
+        font-size: 2.75em;
+        margin-bottom: 1.5em; }
+    .catalog .item--small:nth-of-type(4) {
+      padding-top: 40%;
+      padding-bottom: 5%; } }
+@media (max-width: 520px) {
+  .catalog .item--small, .catalog .item--big {
+    padding: 15px 6% 50%; }
+    .catalog .item--small .item__title, .catalog .item--big .item__title {
+      font-size: 32px;
+      margin-bottom: 0.8em; }
+    .catalog .item--small .item__description, .catalog .item--big .item__description {
+      width: 70%;
+      font-size: 1.71em;
+      margin-top: 0.75em; }
+    .catalog .item--small .button, .catalog .item--big .button {
+      font-size: 16px;
+      width: 100px;
+      height: 40px; }
+  .catalog .item--big:nth-of-type(1) .button {
+    top: 55%;
+    right: 6%; }
+  .catalog .item--big:nth-of-type(2) .button {
+    left: 6%; }
+  .catalog .item--small {
+    padding-top: 2%; }
+    .catalog .item--small .item__description {
+      width: 100%; }
+  .catalog .item--small:nth-of-type(4) {
+    padding-top: 50%;
+    padding-bottom: 5%; } }
+
+/*# sourceMappingURL=catalog.css.map */
